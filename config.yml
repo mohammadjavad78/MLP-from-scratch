@@ -1,0 +1,45 @@
+
+# Model hyperparameters
+learning_rate: 0.001
+batch_size: 32
+num_epochs: 50
+momentom: 0
+Normalize: Normalized
+
+# Dataset parameters
+dataset:
+  path: ./datasets/CIFAR-10/
+  num_classes: 10
+  train_split: 0.8334
+  val_split: 0.8334
+
+# Loss_function parameters
+Loss_function: Cross_entropy
+
+# Layer parameter
+Layer_1:
+  Activation_function: ReLu
+  num_classes: 16
+  mu: 0
+  sigma: 1
+  bias: 0
+
+Layer_2:
+  Activation_function: linear
+  mu: 0
+  sigma: 1
+  bias: 0
+
+# Layer parameter
+# Layer_2:
+#   Activation_function: ReLu
+#   num_classes: 32
+#   mu: 0
+#   sigma: 1
+#   bias: 0
+
+# Layer_3:
+#   Activation_function: linear
+#   mu: 0
+#   sigma: 0.05
+#   bias: 0
